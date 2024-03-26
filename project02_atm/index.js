@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let balance = 10000;
 let pin = 1234;
@@ -21,6 +22,7 @@ if (takePin.pin === pin) {
             type: "number",
             message: "Enter the withdrawl amount",
         });
+        //Can use an if else loop or a Ternary operator
         // if (withdrawlAmount.amountToWithdraw <= balance) {
         //   console.log(
         //     `Remaining balance ${balance - withdrawlAmount.amountToWithdraw}$`
@@ -28,7 +30,9 @@ if (takePin.pin === pin) {
         // } else {
         //   console.log(`Not enough balance! \n Current balance ${balance}$`);
         // }
-        console.log(withdrawlAmount.amountToWithdraw <= balance ? `Remaining balance ${balance - withdrawlAmount.amountToWithdraw}` : `Not enough balance! \n Current balance ${balance}$`);
+        console.log(withdrawlAmount.amountToWithdraw <= balance
+            ? `Remaining balance ${balance - withdrawlAmount.amountToWithdraw}$`
+            : `Not enough balance! \n Current balance ${balance}$`);
     }
     else if (pinOptions.options === "Deposit") {
         let depositAmount = await inquirer.prompt({

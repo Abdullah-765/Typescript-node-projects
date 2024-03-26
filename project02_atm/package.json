@@ -1,14 +1,15 @@
 {
-  "name": "project02_atm",
+  "name": "tsnd_cli_atm",
   "version": "1.0.0",
-  "description": "",
+  "description": "A cli atm program with withdrawl and deposit funcetions using typescript, node and inquirer",
   "main": "index.js",
   "type": "module",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Abdullah Arshad",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^9.2.16"

@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer";
 
 let balance = 10000;
@@ -40,7 +42,7 @@ if (takePin.pin === pin) {
 
         ? `Remaining balance ${balance - withdrawlAmount.amountToWithdraw}$`
         : `Not enough balance! \n Current balance ${balance}$`
-        
+
     );
   } else if (pinOptions.options === "Deposit") {
     let depositAmount = await inquirer.prompt({
