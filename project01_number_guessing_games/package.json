@@ -1,6 +1,6 @@
 {
   "name": "ab4u_number_guessing_cli_game",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cli calculator using typescirpt node and inquirer",
   "main": "index.js",
   "type": "module",
